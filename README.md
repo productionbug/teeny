@@ -1,1 +1,1 @@
-# teeny - A URL Shortner
+# teeny - A Full-stack URL Shortner
