@@ -10,9 +10,9 @@ app.use(morgan("tiny"));
 app.use(bodyParser.json());
 
 app.get("/", (req, res, next) => {
-  res.send("Hello World");
+	res.send("Hello World");
 });
 
 app.listen(port, () => {
-  console.log(`Server is listening at port: ${port}`);
+	console.log(`Server is listening at port: ${port}`);
 });
