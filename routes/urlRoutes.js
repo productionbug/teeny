@@ -1,11 +1,11 @@
-const express = require("express");
+// const express = require("express");
 
-const router = express.Router();
+// const router = express.Router();
 
-router.get("/", () => {});
+// router.get("/", () => {});
 
-router.get("/teeny/:shorturl", () => {});
+// router.get("/teeny/:shorturl", () => {});
 
-router.post("/teeny", () => {});
+// router.post("/teeny", () => {});
 
-module.exports = router;
+// module.exports = router;
