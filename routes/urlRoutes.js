@@ -1,11 +1,13 @@
-// const express = require("express");
+const express = require("express");
 
-// const router = express.Router();
+const urlController = require("../controller/urlController");
 
-// router.get("/", () => {});
+const router = express.Router();
+
+router.get("/", urlController.getHomepage);
 
 // router.get("/teeny/:shorturl", () => {});
 
-// router.post("/teeny", () => {});
+router.post("/teeny", urlController.postTeeny);
 
-// module.exports = router;
+module.exports = router;
