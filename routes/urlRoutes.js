@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/", urlController.getHomepage);
 
-// router.get("/teeny/:shorturl", () => {});
+router.get("/teeny/:shorturl", urlController.getLongUrl);
 
 router.post("/teeny", urlController.postTeeny);
 
