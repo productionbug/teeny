@@ -22,12 +22,12 @@ app.use(bodyParser.json());
 app.use(urlRoutes);
 
 connect("mongodb://localhost:27017/teeny")
-  .then((connection) => {
-    console.log("Database server is running at port: 27017");
-    app.listen(port, () => {
-      console.log(`Server is listening at port: ${port}`);
-    });
-  })
-  .catch((e) => {
-    console.error(e);
-  });
+	.then((connection) => {
+		console.log("Database server is running at port: 27017");
+		app.listen(port, () => {
+			console.log(`Server is listening at port: ${port}`);
+		});
+	})
+	.catch((e) => {
+		console.error(e);
+	});
