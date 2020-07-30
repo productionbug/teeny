@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-const urlRoutes = require("./routes/urlRoutes");
+const urlRoutes = require("./routes/url.route");
 
 const port = process.env.PORT || 3000;
 
@@ -20,5 +20,5 @@ app.use(bodyParser.json());
 app.use(urlRoutes);
 
 app.listen(port, () => {
-  console.log(`Server is listening at port: ${port}`);
+	console.log(`Server is listening at port: ${port}`);
 });
