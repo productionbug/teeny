@@ -16,17 +16,18 @@ app.set("views", "views");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(morgan("tiny"));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(urlRoutes);
 
 connect("mongodb://localhost:27017/teeny")
-	.then((connection) => {
-		console.log("Database server is running at port: 27017");
-		app.listen(port, () => {
-			console.log(`Server is listening at port: ${port}`);
-		});
-	})
-	.catch((e) => {
-		console.error(e);
-	});
+  .then((connection) => {
+    console.log("Database server is running at port: 27017");
+    app.listen(port, () => {
+      console.log(`Server is listening at port: ${port}`);
+    });
+  })
+  .catch((e) => {
+    console.error(e);
+  });
