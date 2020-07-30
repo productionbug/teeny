@@ -39,8 +39,12 @@ exports.postTeeny = async (req, res, next) => {
   }
 };
 
-exports.getLongUrl = (req, res, next) => {
+exports.getLongUrl = async (req, res, next) => {
   const shortUrl = req.params.shorturl;
-  console.log(req.params.shorturl);
-  res.json({ message: "inside longurl" });
+  try {
+    const longUrl = await Url.find({ shortUrl }).lean().exec();
+    res.send(longUrl.longUrl);
+  } catch (e) {
+    console.log(e);
+  }
 };
