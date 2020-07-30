@@ -25,7 +25,8 @@ exports.postTeeny = async (req, res, next) => {
 		const shortUrl = nanoid();
 		const url = await Url.create({ longUrl, shortUrl });
 		const result = {
-			shortUrl: `https://teeny.cc/${url.toObject().shortUrl}`,
+			// shortUrl: `https://teeny.cc/${url.toObject().shortUrl}`,
+			shortUrl: `http://localhost:3000/${url.toObject().shortUrl}`,
 		};
 
 		return res.status(201).send(result);
