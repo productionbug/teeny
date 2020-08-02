@@ -49,6 +49,7 @@ exports.getLongUrl = async (req, res, next) => {
 	try {
 		const { longUrl } = await Url.findOne({ shortUrl }).lean().exec();
 
+		// res.redirect(longUrl);
 		res.send(longUrl);
 	} catch (e) {
 		console.log(e);
@@ -56,8 +57,6 @@ exports.getLongUrl = async (req, res, next) => {
 	}
 };
 
-// TODO: Add a virtual to set a http before the url
-// TODO: Redirect URL to the long URL
 // TODO: Test with short urls that are not present in the db
 // TODO: Check if urls are present in the db
 // TODO: Above test should redirect to 404 by calling next
