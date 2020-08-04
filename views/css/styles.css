@@ -20,4 +20,15 @@
 }
 
 .github-link {
+  width: 62px;
+  height: 64px;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.github-link:hover {
+  text-decoration: none;
+  background-color: none;
+  color: #16a085;
 }
