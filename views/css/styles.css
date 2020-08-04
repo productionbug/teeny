@@ -21,9 +21,10 @@
 
 .github-link {
   font-size: 38px;
-  color: #000;
+  color: #2f2e41;
   text-decoration: none;
   background-color: transparent;
+  transition: all 0.2s ease-in;
 }
 
 .github-link:hover {
