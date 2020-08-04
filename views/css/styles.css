@@ -20,8 +20,7 @@
 }
 
 .github-link {
-  width: 62px;
-  height: 64px;
+  font-size: 38px;
   color: #000;
   text-decoration: none;
   background-color: transparent;
