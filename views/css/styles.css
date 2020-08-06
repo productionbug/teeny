@@ -2,79 +2,79 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .navbar-light .navbar-brand {
-  font-family: "Leckerli One", cursive;
-  color: #9f97ec;
-  font-size: 60px;
-  line-height: 81px;
+	font-family: "Leckerli One", cursive;
+	color: #9f97ec;
+	font-size: 60px;
+	line-height: 81px;
 }
 
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-  color: #9f97ec;
+	color: #9f97ec;
 }
 
 .github-link {
-  font-size: 38px;
-  color: #2f2e41;
-  text-decoration: none;
-  background-color: transparent;
-  transition: all 0.2s ease-in;
+	font-size: 38px;
+	color: #2f2e41;
+	text-decoration: none;
+	background-color: transparent;
+	transition: all 0.2s ease-in;
 }
 
 .github-link:hover {
-  text-decoration: none;
-  background-color: none;
-  color: #16a085;
+	text-decoration: none;
+	background-color: none;
+	color: #16a085;
 }
 
 .section-hero {
-  min-height: 70vh;
-  padding: 7rem 16px;
+	min-height: 70vh;
+	padding: 7rem 16px;
 }
 
 .url-input-header {
-  display: block;
+	display: block;
 }
 
 .url-input-header,
 #url,
 .btn-custom {
-  font-family: "Poppins";
+	font-family: "Poppins";
 }
 
 .input-holder {
-  position: relative;
-  min-height: 30px;
+	position: relative;
+	min-height: 30px;
 }
 
 #url {
-  max-width: 400px;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	max-width: 400px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .btn-custom {
-  background-color: #9f97ec;
-  border-color: #9f97ec;
+	background-color: #9f97ec;
+	border-color: #9f97ec;
 }
 
 .btn-custom:not(:disabled):not(.disabled).active,
 .btn-custom:not(:disabled):not(.disabled):active,
 .show > .btn-custom.dropdown-toggle {
-  background-color: #9f97ec;
-  border-color: #9f97ec;
+	background-color: #9f97ec;
+	border-color: #9f97ec;
 }
 
 .btn-custom:hover {
-  background-color: #8c84cf;
-  border-color: #8c84cf;
+	background-color: #8c84cf;
+	border-color: #8c84cf;
 }
