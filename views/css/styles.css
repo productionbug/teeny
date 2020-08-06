@@ -45,7 +45,8 @@
 .url-input-header,
 #url,
 .btn-custom {
-	font-family: "Poppins";
+    font-family: "Poppins";
+    font-weight: 600;
 }
 
 .input-holder {
@@ -78,3 +79,5 @@
 	background-color: #8c84cf;
 	border-color: #8c84cf;
 }
+
+.
