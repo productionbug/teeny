@@ -122,6 +122,6 @@
     background-color: #2f2e41;
 }
 
-.svg-image {
-    transform: translateY(20px);
+.custom-container {
+    padding-top: 5%;
 }
