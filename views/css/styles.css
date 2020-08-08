@@ -125,3 +125,12 @@
 .custom-container {
     padding-top: 5%;
 }
+
+.text-404 {
+    color: #8c84cf;
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
