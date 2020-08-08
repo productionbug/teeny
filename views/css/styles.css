@@ -124,6 +124,7 @@
 
 .custom-container {
     padding-top: 5%;
+    height: 100vh;
 }
 
 .text-404 {
@@ -133,4 +134,9 @@
     font-weight: bold;
     font-style: italic;
     text-align: center;
+}
+
+.wrapper--404 {
+    height: 100vh;
+    background: linear-gradient(160deg, #8c84cf, #fefefe);
 }
