@@ -124,6 +124,7 @@
 
 .body-of-404 {
     background: linear-gradient(160deg, #8c84cf, #fefefe);
+    position: relative;
 }
 
 .nav-404 {
@@ -137,7 +138,7 @@
 
 .custom-container {
     padding-top: 25px;
-    height: 100vh;
+    height: 88.6vh;
 }
 
 .text-404 {
@@ -150,6 +151,5 @@
 }
 
 .wrapper--404 {
-    height: 100vh;
     background: transparent;
 }
