@@ -2,150 +2,154 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .wrapper {
-    position: relative;
-    min-height: 100vh;
+	position: relative;
+	min-height: 100vh;
 }
 
 .wrapper-content {
-    padding-bottom: 5.3125rem;
+	padding-bottom: 5.3125rem;
 }
 
 .navbar-light .navbar-brand {
-    font-family: "Leckerli One", cursive;
-    color: #9f97ec;
-    font-size: 60px;
-    line-height: 81px;
+	font-family: "Leckerli One", cursive;
+	color: #9f97ec;
+	font-size: 60px;
+	line-height: 81px;
 }
 
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-    color: #9f97ec;
+	color: #9f97ec;
 }
 
 .github-link {
-    font-size: 38px;
-    color: #2f2e41;
-    text-decoration: none;
-    background-color: transparent;
-    transition: all 0.2s ease-in;
+	font-size: 38px;
+	color: #2f2e41;
+	text-decoration: none;
+	background-color: transparent;
+	transition: all 0.2s ease-in;
 }
 
 .github-link:hover {
-    text-decoration: none;
-    background-color: none;
-    color: #16a085;
+	text-decoration: none;
+	background-color: none;
+	color: #16a085;
 }
 
 .section-hero {
-    min-height: 75vh;
-    padding: 6rem 16px;
+	min-height: 75vh;
+	padding: 6rem 16px;
 }
 
 .section-hero--teeny {
-    margin-top: 4rem;
+	margin-top: 4rem;
 }
 .url-input-header {
-    display: block;
-    font-weight: 600;
+	display: block;
+	font-weight: 600;
 }
 
 .url-input-header,
 #url,
 .btn-custom {
-    font-family: "Poppins";
+	font-family: "Poppins";
 }
 
 .input-holder {
-    position: relative;
-    min-height: 30px;
+	position: relative;
+	min-height: 30px;
 }
 
 #url {
-    max-width: 400px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	max-width: 400px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .btn-custom {
-    background-color: #9f97ec;
-    border-color: #9f97ec;
+	background-color: #9f97ec;
+	border-color: #9f97ec;
 }
 
 .btn-custom:not(:disabled):not(.disabled).active,
 .btn-custom:not(:disabled):not(.disabled):active,
 .show > .btn-custom.dropdown-toggle {
-    background-color: #9f97ec;
-    border-color: #9f97ec;
+	background-color: #9f97ec;
+	border-color: #9f97ec;
 }
 
 .btn-custom:hover {
-    background-color: #8c84cf;
-    border-color: #8c84cf;
+	background-color: #8c84cf;
+	border-color: #8c84cf;
 }
 
 .url-redirect {
-    background-color: #f2f2f2;
-    border-radius: 0.25rem;
+	background-color: #f2f2f2;
+	border-radius: 0.25rem;
 
-    width: 100%;
-    text-align: center;
-    max-width: 400px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+	width: 100%;
+	text-align: center;
+	max-width: 400px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
 .url-redirect--content {
-    position: relative;
+	position: relative;
 }
 
 .url-redirect--copy {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    right: 10%;
-    /* transform: translate(-50%, ); */
+	position: absolute;
+	display: inline-block;
+	top: 53%;
+	right: 10%;
+	transform: translate(-10%, -45%);
+	color: #2f2e41;
+}
+.url-redirect--copy:hover {
+	color: #111118b2;
 }
 
 .url-redirect--link {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    font-weight: 500;
-    color: #9f97ec;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	font-weight: 500;
+	color: #9f97ec;
 }
 
 .footer-container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5.3125rem;
-    background-color: #2f2e41;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5.3125rem;
+	background-color: #2f2e41;
 }
 
 .footer-text {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 .img-flag {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 .text-404 {
-    color: #8c84cf;
-    font-size: 1.5625rem;
-    font-weight: 500;
-    text-align: center;
+	color: #8c84cf;
+	font-size: 1.5625rem;
+	font-weight: 500;
+	text-align: center;
 }
