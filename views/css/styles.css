@@ -106,6 +106,19 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
+
+.url-redirect--content {
+    position: relative;
+}
+
+.url-redirect--copy {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: 10%;
+    /* transform: translate(-50%, ); */
+}
+
 .url-redirect--link {
     padding-top: 10px;
     padding-bottom: 10px;
