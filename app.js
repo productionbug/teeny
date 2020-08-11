@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
+const helmet = require("helmet");
 
 const connect = require("./db/connect");
 const urlRoutes = require("./routes/url.route");
@@ -15,6 +16,8 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", "views");
+
+app.use(helmet());
 
 app.use(express.static(path.join(__dirname, "public")));
 
