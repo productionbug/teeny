@@ -4,7 +4,7 @@ const validator = require("validator");
 const Url = require("../model/url.model");
 
 exports.getHomepage = (req, res, next) => {
-	res.json({ message: "inside homepage" });
+	res.render("index.ejs");
 };
 
 exports.postTeeny = async (req, res, next) => {
