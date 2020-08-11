@@ -1,8 +1,83 @@
-<%- include('includes/head.ejs') %>
 
-<div class="container">
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<a href="/" class="navbar-brand">Teeny</a>
-	</nav>
-</div>
-<%- include('includes/footer.ejs') %>
+<%- include("includes/head.ejs") %>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper-content">
+				<%- include("includes/navigation.ejs") %>
+				<main class="container">
+					<section class="section-hero">
+						<div class="row pt-5 pb-5">
+							<div class="col-12 col-md-5">
+								<img
+									src="./hero.svg"
+									alt="hero"
+									class="img-fluid section-hero--img"
+								/>
+							</div>
+							<div
+								class="col-12 offset-md-1 col-md-6 section-hero--teeny"
+							>
+								<div class="row">
+									<div class="col-12">
+										<form>
+											<div class="form-group">
+												<label
+													class="url-input-header text-center"
+													for="url"
+													>Shorten the URL</label
+												>
+												<div class="input-holder">
+													<input
+														type="text"
+														class="form-control input-box"
+														id="url"
+														required
+														aria-describedby="urlInputHelp"
+														name="url"
+														placeholder="Enter your link"
+													/>
+												</div>
+											</div>
+											<div
+												class="button-holder text-center"
+											>
+												<button
+													type="submit"
+													class="btn btn-primary btn-custom"
+												>
+													make it teeny
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="col-12 mt-4">
+										<div class="input-holder">
+											<div class="url-redirect">
+												<div
+													class="url-redirect--content"
+												>
+													<p
+														class="url-redirect--link"
+													>
+														teeny.cc/xysawr
+													</p>
+													<a
+														class="url-redirect--copy"
+														><span
+															class="far fa-copy"
+														></span
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+<%- include("includes/footer.ejs") %>
+		<%- include("includes/end.ejs") %>
+	</body>
+	</html>
