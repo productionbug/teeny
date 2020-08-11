@@ -5,7 +5,8 @@ const Url = require("../model/url.model");
 
 exports.getHomepage = (req, res, next) => {
 	res.render("index.ejs", {
-		url: { teeny: "undefined" },
+		// url: { teeny: "undefined" },
+		url: { teeny: "teeny.cc" },
 	});
 };
 
