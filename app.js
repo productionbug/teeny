@@ -41,3 +41,6 @@ connect("mongodb://localhost:27017/teeny")
 	.catch((e) => {
 		console.error(e);
 	});
+
+// TODO: Add error page in ejs
+// TODO: render the shorturl to index.ejs after posting
