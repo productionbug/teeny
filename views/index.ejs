@@ -61,9 +61,11 @@
 													<p
 														class="url-redirect--link"
 													>
-														<!-- <% if(Object.keys(url).length === 0 && obj.constructor === Object) { %>
-															<%= url %>
-														<%}%> -->
+													<% if (url.teeny === undefined) { %>
+														<span> Your teeny url comes here</span>
+													<% } else { %>
+														<span></span>
+													<% } %>
 													</p>
 													<a
 														class="url-redirect--copy"
