@@ -31,7 +31,9 @@ app.use(errorRoute);
 
 app.use(errorHandler);
 
-connect("mongodb://localhost:27017/teeny")
+const MONGODBURI = process.env.MONGODBURI || "mongodb://localhost:27017/teeny";
+
+connect(MONGODBURI)
     .then((connection) => {
         console.log("Database server is running at port: 27017");
         app.listen(port, () => {
@@ -42,5 +44,4 @@ connect("mongodb://localhost:27017/teeny")
         console.error(e);
     });
 
-// TODO: Add error page in ejs
 // TODO: render the shorturl to index.ejs after posting
