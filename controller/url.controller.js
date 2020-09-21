@@ -30,7 +30,7 @@ exports.postTeeny = async (req, res, next) => {
         const url = await Url.create({ longUrl, shortUrl });
         const result = {
             // teeny: `https://teeny.cc/${url.toObject().shortUrl}`,
-            teeny: `http://localhost:3000/${url.toObject().shortUrl}`,
+            teeny: `https://teeny-nn.herokuapp.com/${url.toObject().shortUrl}`,
         };
         res.status(201);
 
