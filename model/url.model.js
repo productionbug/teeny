@@ -19,7 +19,7 @@ const urlSchema = new Schema(
 
 urlSchema.pre("save", function (next) {
 	if (
-		this.longUrl.indexOf("http://") === -1 ||
+		this.longUrl.indexOf("http://") === -1 &&
 		this.longUrl.indexOf("https://") === -1
 	) {
 		this.longUrl = "http://" + this.longUrl;
