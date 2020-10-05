@@ -60,7 +60,7 @@
 													<p
 														class="url-redirect--link"
 													>
-													<% if (url.teeny) { %>
+													<% if (!url.teeny) { %>
 														<span> Your teeny url comes here</span>
 													<% } else { %>
 														<span> <%= url.teeny %></span>
